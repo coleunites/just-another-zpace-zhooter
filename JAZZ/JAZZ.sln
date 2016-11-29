@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jazz", "Jazz\Jazz.vcxproj", "{565143A0-6542-4097-AD28-DC5C27A29CFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SGE", "SGE\SGE.vcxproj", "{34282BBF-80BD-40A9-8B00-4B6955B5D24A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Debug|x64.ActiveCfg = Debug|x64
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Debug|x64.Build.0 = Debug|x64
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Debug|x86.ActiveCfg = Debug|Win32
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Debug|x86.Build.0 = Debug|Win32
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Release|x64.ActiveCfg = Release|x64
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Release|x64.Build.0 = Release|x64
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Release|x86.ActiveCfg = Release|Win32
+		{565143A0-6542-4097-AD28-DC5C27A29CFD}.Release|x86.Build.0 = Release|Win32
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A}.Debug|x64.ActiveCfg = Debug|Win32
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A}.Debug|x86.ActiveCfg = Debug|Win32
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A}.Debug|x86.Build.0 = Debug|Win32
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A}.Release|x64.ActiveCfg = Release|Win32
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A}.Release|x86.ActiveCfg = Release|Win32
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
