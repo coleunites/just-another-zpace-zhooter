@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jazz", "Jazz\Jazz.vcxproj", "{565143A0-6542-4097-AD28-DC5C27A29CFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34282BBF-80BD-40A9-8B00-4B6955B5D24A} = {34282BBF-80BD-40A9-8B00-4B6955B5D24A}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SGE", "SGE\SGE.vcxproj", "{34282BBF-80BD-40A9-8B00-4B6955B5D24A}"
 EndProject

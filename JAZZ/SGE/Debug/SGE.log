@@ -1,5 +1,28 @@
-﻿Build started 8/27/2015 8:43:56 PM.
-
-Build succeeded.
-
-Time Elapsed 00:00:00.01
+﻿  SGE_UI.cpp
+  SGE_Math.cpp
+  SGE_Graphics.cpp
+  SGE_Audio.cpp
+  SGE.cpp
+  Debug.cpp
+  CResourceManager.cpp
+  CResource.cpp
+  CSplashScreen.cpp
+  CIniFile.cpp
+  CDXInput.cpp
+  CWireFrame.cpp
+  CTexture.cpp
+  CSpriteRenderer.cpp
+  CSprite.cpp
+  CShader.cpp
+  CRenderSurface.cpp
+  CFont.cpp
+  CDXGraphics.cpp
+  CTimer.cpp
+  Generating Code...
+  Compiling...
+  CLog.cpp
+  CApplication.cpp
+  CSound.cpp
+  CFMOD.cpp
+  Generating Code...
+  SGE.vcxproj -> D:\Projects\JustAnotherZpaceZhooter\JAZZ\Debug\SGE.lib

@@ -69,7 +69,7 @@ void SVector2::PerpendicularRH(void)
 
 float SVector2::Length(void) const
 {
-	return sqrt((x * x) + (y * y));
+	return sqrtf((x * x) + (y * y));
 }
 
 //----------------------------------------------------------------------------------------------------
@@ -120,8 +120,8 @@ void SVector2::Reflect(const SVector2& normal)
 
 void SVector2::Rotate(float rad)
 {
-	const float kCosAngle = cos(rad);
-	const float kSinAngle = sin(rad);
+	const float kCosAngle = cosf(rad);
+	const float kSinAngle = sinf(rad);
 
 	SVector2 temp(x, y);
 	x = temp.x * kCosAngle - temp.y * kSinAngle;
@@ -262,8 +262,8 @@ void SMatrix33::SetTranslate(float x, float y)
 
 void SMatrix33::SetRotate(float rad)
 {
-	const float c = cos(rad);
-	const float s = sin(rad);
+	const float c = cosf(rad);
+	const float s = sinf(rad);
 
 	_11 = c;	_12 = s;	_13 = 0.0f;
 	_21 = -s;	_22 = c;	_23 = 0.0f;
@@ -557,7 +557,7 @@ float Distance(const SVector2& v0, const SVector2& v1)
 	float fDiffX = v0.x - v1.x;
 	float fDiffY = v0.y - v1.y;
 
-	return sqrt(fDiffX * fDiffX + fDiffY * fDiffY);
+	return sqrtf(fDiffX * fDiffX + fDiffY * fDiffY);
 }
 
 //----------------------------------------------------------------------------------------------------
