@@ -1,2 +1,9 @@
 ﻿  WinMain.cpp
-  Jazz.vcxproj -> D:\Projects\JustAnotherZpaceZhooter\JAZZ\Debug\Jazz.exe
+  GamePlayState.cpp
+  GameManager.cpp
+  GameContext.cpp
+  FrontEndState.cpp
+  AppStateFactory.cpp
+  AppState.cpp
+  Generating Code...
+  Jazz.vcxproj -> B:\Projects\JustAnotherZpaceZhooter\JAZZ\Debug\Jazz.exe

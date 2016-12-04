@@ -2,5 +2,43 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="AppState.cpp">
+      <Filter>AppStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameContext.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="AppStateFactory.cpp">
+      <Filter>AppStates</Filter>
+    </ClCompile>
+    <ClCompile Include="FrontEndState.cpp">
+      <Filter>AppStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePlayState.cpp">
+      <Filter>AppStates</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AppStates">
+      <UniqueIdentifier>{f2ae82b3-312a-467f-ae21-ae70517c1eff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppState.h">
+      <Filter>AppStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameContext.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="AppStates.h">
+      <Filter>AppStates</Filter>
+    </ClInclude>
+    <ClInclude Include="AppStatesFactory.h">
+      <Filter>AppStates</Filter>
+    </ClInclude>
+    <ClInclude Include="FrontEndState.h">
+      <Filter>AppStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePlayState.h">
+      <Filter>AppStates</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

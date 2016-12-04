@@ -93,6 +93,9 @@ public:
 
 	bool IsPressed(void) const;
 
+	int GetSpriteWidth();
+	int GetSpriteHeight();
+
 private:
 	enum{ ON = 0, OFF = 1 };
 

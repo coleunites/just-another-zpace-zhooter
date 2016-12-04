@@ -297,4 +297,23 @@ bool SGE_Button::IsPressed(void) const
 	return bPressed;
 }
 
+//----------------------------------------------------------------------------------------------------
+
+int SGE_Button::GetSpriteWidth()
+{
+	int width, height;
+	mpSprite->GetDimension(width, height);
+	return width;
+}
+
+
+//----------------------------------------------------------------------------------------------------
+
+int SGE_Button::GetSpriteHeight()
+{
+	int width, height;
+	mpSprite->GetDimension(width, height);
+	return height;
+}
+
 } // namespace SGE

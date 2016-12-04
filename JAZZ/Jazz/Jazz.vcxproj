@@ -148,12 +148,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AppState.cpp" />
+    <ClCompile Include="AppStateFactory.cpp" />
+    <ClCompile Include="FrontEndState.cpp" />
+    <ClCompile Include="GameContext.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GamePlayState.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SGE\SGE.vcxproj">
       <Project>{34282bbf-80bd-40a9-8b00-4b6955b5d24a}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppState.h" />
+    <ClInclude Include="AppStates.h" />
+    <ClInclude Include="AppStatesFactory.h" />
+    <ClInclude Include="FrontEndState.h" />
+    <ClInclude Include="GameContext.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GamePlayState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
