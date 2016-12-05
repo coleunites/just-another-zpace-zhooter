@@ -150,10 +150,17 @@
   <ItemGroup>
     <ClCompile Include="AppState.cpp" />
     <ClCompile Include="AppStateFactory.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletPool.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="FrontEndState.cpp" />
     <ClCompile Include="GameContext.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GamePlayState.cpp" />
+    <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,10 +172,17 @@
     <ClInclude Include="AppState.h" />
     <ClInclude Include="AppStates.h" />
     <ClInclude Include="AppStatesFactory.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletPool.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="FrontEndState.h" />
     <ClInclude Include="GameContext.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="GamePlayState.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

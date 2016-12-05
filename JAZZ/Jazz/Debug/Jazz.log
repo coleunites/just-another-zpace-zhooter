@@ -1,9 +1,5 @@
-﻿  WinMain.cpp
-  GamePlayState.cpp
-  GameManager.cpp
-  GameContext.cpp
-  FrontEndState.cpp
-  AppStateFactory.cpp
-  AppState.cpp
+﻿  HUD.cpp
+  BulletPool.cpp
+  Bullet.cpp
   Generating Code...
   Jazz.vcxproj -> B:\Projects\JustAnotherZpaceZhooter\JAZZ\Debug\Jazz.exe

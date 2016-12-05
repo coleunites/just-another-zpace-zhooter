@@ -3,6 +3,9 @@
 
 #include "AppState.h"
 
+#include "Player.h"
+#include "Enemy.h"
+
 class GamePlayState : public AppState
 {
 public:
@@ -15,6 +18,8 @@ public:
 	virtual bool Update(const float deltaTime, AppStates & nextAppState) override;
 
 private:
+	Player mPlayer;
+	Enemy mEnemy;
 };
 
 #endif

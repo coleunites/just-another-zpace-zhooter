@@ -16,10 +16,26 @@
     <ClCompile Include="GamePlayState.cpp">
       <Filter>AppStates</Filter>
     </ClCompile>
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletPool.cpp" />
+    <ClCompile Include="HUD.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="AppStates">
       <UniqueIdentifier>{f2ae82b3-312a-467f-ae21-ae70517c1eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{f96ad914-f84e-4196-b67f-cb1e16e9f955}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -40,5 +56,18 @@
     <ClInclude Include="GamePlayState.h">
       <Filter>AppStates</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Entity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletPool.h" />
+    <ClInclude Include="HUD.h" />
   </ItemGroup>
 </Project>
