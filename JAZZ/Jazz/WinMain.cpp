@@ -1,27 +1,27 @@
 #include <SGE.h>
 
-#include "GameManager.h"
+#include "AppStateManager.h"
 
-GameManager gameManager;
+AppStateManager appStateManager;
 
 using namespace SGE;
 
 void SGE_Initialize()
 {
-	gameManager.Load();
+	appStateManager.Load();
 }
 
 void SGE_Terminate()
 {
-	gameManager.Unload();
+	appStateManager.Unload();
 }
 
 bool SGE_Update(float deltaTime)
 {
-	return gameManager.Update(deltaTime);
+	return appStateManager.Update(deltaTime);
 }
 
 void SGE_Render()
 {
-	gameManager.Render();
+	appStateManager.Render();
 }

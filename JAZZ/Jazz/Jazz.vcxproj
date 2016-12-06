@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="AppState.cpp" />
     <ClCompile Include="AppStateFactory.cpp" />
+    <ClCompile Include="AppStateManager.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="BulletPool.cpp" />
     <ClCompile Include="Enemy.cpp" />
@@ -170,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppState.h" />
+    <ClInclude Include="AppStateManager.h" />
     <ClInclude Include="AppStates.h" />
     <ClInclude Include="AppStatesFactory.h" />
     <ClInclude Include="Bullet.h" />

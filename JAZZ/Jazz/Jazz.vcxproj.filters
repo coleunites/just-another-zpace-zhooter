@@ -6,7 +6,6 @@
       <Filter>AppStates</Filter>
     </ClCompile>
     <ClCompile Include="GameContext.cpp" />
-    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="AppStateFactory.cpp">
       <Filter>AppStates</Filter>
     </ClCompile>
@@ -29,6 +28,10 @@
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="BulletPool.cpp" />
     <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="AppStateManager.cpp">
+      <Filter>AppStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="AppStates">
@@ -43,7 +46,6 @@
       <Filter>AppStates</Filter>
     </ClInclude>
     <ClInclude Include="GameContext.h" />
-    <ClInclude Include="GameManager.h" />
     <ClInclude Include="AppStates.h">
       <Filter>AppStates</Filter>
     </ClInclude>
@@ -69,5 +71,9 @@
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="BulletPool.h" />
     <ClInclude Include="HUD.h" />
+    <ClInclude Include="AppStateManager.h">
+      <Filter>AppStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h" />
   </ItemGroup>
 </Project>
