@@ -6,6 +6,7 @@ using namespace SGE;
 
 Player::Player(unsigned int lives)
 	: mLives(lives)
+	, mBulletVel(0.0f, -300.0f)
 {
 
 }
@@ -18,15 +19,20 @@ Player::~Player()
 void Player::Load() 
 {
 	mSprite.Load("Fighter.png");
+	mBullets.Load(10);
 }
 
 void Player::Unload()
 {
+	mBullets.UnLoad();
+
 	mSprite.Unload();
 }
 
 void Player::Render()
 {
+	mBullets.Render();
+
 	SVector2 spriteHalfDim(static_cast<float>(mSprite.GetWidth()), static_cast<float>(mSprite.GetHeight()));
 	spriteHalfDim *= 0.5f;
 	mSprite.SetPosition(mPos - spriteHalfDim);
@@ -50,6 +56,7 @@ void Player::Update(const float deltaTime)
 	{
 		movement.x = -1;
 	}
+
 	if (SGE::Input_IsKeyDown(Keys::UP) && mPos.y - spriteHalfDim.y > 0.0f)
 	{
 		movement.y = -1;
@@ -59,6 +66,13 @@ void Player::Update(const float deltaTime)
 		movement.y = 1;
 	}
 
+	if (SGE::Input_IsKeyPressed(Keys::SPACE))
+	{
+		mBullets.Fire(mPos, mBulletVel);
+	}
+
+	mBullets.Update(deltaTime);
+
 	movement.Normalize();
 	movement *= mSpeed * deltaTime;
 
@@ -67,7 +81,10 @@ void Player::Update(const float deltaTime)
 
 void Player::Kill()
 {
-
+	if (mLives > 0)
+	{
+		--mLives;
+	}
 }
 
 unsigned int Player::GetLives() const

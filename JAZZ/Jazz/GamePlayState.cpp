@@ -24,18 +24,22 @@ void GamePlayState::Load()
 	mEnemy.SetPosition(SVector2(200.0f, 0.0f));
 	mEnemy.SetSpeed(kPlayerSpeed * 0.5f);
 	mEnemy.Activate();
+
+	mHud.Load(mPlayer.GetLives(), "fighterLives.png");
 }
 
 void GamePlayState::Unload()
 {
 	mPlayer.Unload();
 	mEnemy.Unload();
+	mHud.UnLoad();
 }
 
 void GamePlayState::Render()
 {
 	mPlayer.Render();
 	mEnemy.Render();
+	mHud.Render();
 }
 
 bool GamePlayState::Update(const float deltaTime, AppStates & nextAppState)
@@ -45,10 +49,19 @@ bool GamePlayState::Update(const float deltaTime, AppStates & nextAppState)
 	mPlayer.Update(deltaTime);
 	mEnemy.Update(deltaTime);
 
+
+
 	if ( Input_IsKeyPressed(Keys::ESCAPE))
 	{
 		return true;
 	}
 
+	// test ti see if live counter works
+	if (Input_IsKeyPressed(Keys::P))
+	{
+		mPlayer.Kill();
+		mHud.UpdateNumLives(mPlayer.GetLives());
+	}
+	
 	return false;
 }

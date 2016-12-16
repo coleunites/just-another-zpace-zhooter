@@ -8,11 +8,12 @@ public:
 	~GameManager() {}
 	static GameManager & Instance();
 
+
+
 private:
 	GameManager() {}
 
 	static GameManager * mInstance;
-
 };
 
 #endif

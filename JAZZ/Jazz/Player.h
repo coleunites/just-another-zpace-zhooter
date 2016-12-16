@@ -1,7 +1,9 @@
 #ifndef PLAYER_HEADERGAURD
 #define PLAYER_HEADERGAURD
 
+#include "BulletPool.h"
 #include "Entity.h"
+
 
 class Player : public Entity
 {
@@ -20,6 +22,8 @@ public:
 
 private:
 	unsigned int mLives;
+	SGE::SVector2 mBulletVel;
+	BulletPool mBullets;
 };
 
 #endif

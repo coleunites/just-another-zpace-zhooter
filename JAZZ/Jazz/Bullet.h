@@ -10,11 +10,14 @@ public:
 	virtual ~Bullet();
 
 	virtual void Load() override;
+	void Load(const char* textureName);
 	virtual void Unload() override;
 	virtual void Render() override;
 	virtual void Update(const float deltaTime) override;
 
-	void Fire(const SGE::SVector2 pos, const SGE::SVector2 vel);
+	SGE::SVector2 GetSpriteDim();
+
+	void Fire(const SGE::SVector2 & pos, const SGE::SVector2 & vel);
 	void Kill();
 
 	bool IsActive() const;

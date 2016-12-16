@@ -5,6 +5,7 @@
 
 #include "Player.h"
 #include "Enemy.h"
+#include "HUD.h"
 
 class GamePlayState : public AppState
 {
@@ -20,6 +21,7 @@ public:
 private:
 	Player mPlayer;
 	Enemy mEnemy;
+	HUD mHud;
 };
 
 #endif

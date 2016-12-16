@@ -6,6 +6,8 @@ AppStateManager appStateManager;
 
 using namespace SGE;
 
+// TODO: get rid of magic numbers
+
 void SGE_Initialize()
 {
 	appStateManager.Load();
